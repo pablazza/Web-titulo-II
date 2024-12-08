@@ -1,0 +1,46 @@
+.Contact-container {
+    background-color: #fdfffc;
+    color: #011627;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.Contact-container h1 {
+    font-size: 2.5em;
+}
+
+.Contact-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #2ec4b6;
+    width: 400px;
+    border-radius: 15%;
+    border:2px solid #011627;
+}
+
+.Contact-img img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.Contact-Data h2 {
+    color: #011627;
+}
+
+.Contact-Social {
+    margin-bottom: 20px;
+}
+
+.Contact-Social a {
+    margin-right: 10px;
+    color: #e71d36;
+    text-decoration: none;
+}
+
+.Contact-Social a:hover {
+    color: #ff9f1c;
+}
