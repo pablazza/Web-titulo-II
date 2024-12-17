@@ -14,7 +14,7 @@ const Contact = () => {
                 Contacto
             </h1>
             <div className='Contact-info'>
-                <div className='Contact-img' tabIndex="0" role="button">
+                <div className='Contact-img'>
                     <img src={Pablo} alt="Fotografía de Pablo Zúñiga" tabIndex="0" />
                 </div>
                 <div className='Contact-Data'>
@@ -23,10 +23,10 @@ const Contact = () => {
                     <h4 tabIndex="0" role="button">pzunigan@utem.cl</h4>
                     <div className="Contact-Social">
                         <a href="https://www.linkedin.com/in/pablo-enrique-zúñiga-naranjo/" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                            <FontAwesomeIcon icon={faLinkedin} size="lg" /> LinkedIn
                         </a>
                         <a href="https://github.com/pablazza" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faGithub} size="lg" />
+                            <FontAwesomeIcon icon={faGithub} size="lg" /> Github
                         </a>
                     </div>
                 </div>

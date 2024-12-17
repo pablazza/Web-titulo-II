@@ -1,0 +1,47 @@
+.Robusto {
+    background-color: #f1faee; /* Fondo claro */
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.Robusto h2 {
+    color: #457b9d; /* Color secundario */
+}
+
+.Robusto p {
+    line-height: 1.5;
+    color: #1d3557; /* Color oscuro */
+}
+
+.Robusto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.Robusto img:hover {
+    transform: scale(1.05);
+}
+
+.alt-text {
+    margin-top: 0.5rem;
+    color: #1d3557; /* Color oscuro */
+    font-weight: bold;
+}
+
+/* Contraste */
+.high-contrast .Robusto {
+    background-color: #1d3557; /* Color oscuro */
+    color: #f1faee; /* Fondo claro */
+}
+
+.high-contrast .accessible-table th {
+    background-color: #457b9d; /* Color secundario */
+}
+
+.high-contrast .accessible-table a {
+    color: #e63946; /* Color principal */
+}

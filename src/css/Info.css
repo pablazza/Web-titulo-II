@@ -1,16 +1,16 @@
 .Info-container {
-    max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
-    background-color: #fdfffc;
-    color: #011627;
+    background-color: #f1faee; /* Fondo claro */
+    color: #1d3557; /* Color oscuro */
     font-family: Arial, sans-serif;
+    text-align: justify;
+    height: 100vh;
 }
 
 .Info-title {
-    text-align: center;
     font-size: 2.5em;
-    margin-bottom: 30px;
+    color: #457b9d; /* Color secundario */
 }
 
 .Info-content {
@@ -19,7 +19,6 @@
 }
 
 .Info-Tech {
-    text-align: center;
     font-size: 1.5em;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -27,17 +26,14 @@
 
 .Tech-Container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 40px;
-    padding: 20px;
 }
 
 .Tech-Item {
     display: flex;
     align-items: center;
-    background-color: #333;
+    background-color: #457b9d; /* Color secundario */
     border-radius: 8px;
     overflow: hidden;
     padding: 20px;
@@ -79,4 +75,14 @@
     color: white;
     font-size: inherit;
     text-align: left;
+}
+
+/* Contraste */
+.high-contrast .Info-container {
+    background-color: #1d3557; /* Color oscuro */
+    color: #f1faee; /* Fondo claro */
+}
+
+.high-contrast .Info-title {
+    color: #457b9d; /* Color secundario */
 }

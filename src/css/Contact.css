@@ -1,22 +1,33 @@
 .Contact-container {
-    background-color: #fdfffc;
-    color: #011627;
-    padding: 20px;
+    background-color: #f1faee; /* Fondo claro */
+    color: #1d3557; /* Color oscuro */
     font-family: Arial, sans-serif;
+    min-height: 91vh; /* Ocupa toda la altura de la ventana */
+    display: flex; /* Centra el contenido opcionalmente */
+    flex-direction: column;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+    font-weight: bold;
 }
 
 .Contact-container h1 {
     font-size: 2.5em;
+    text-align: justify;
+    margin-left: 20px;
+    color: #457b9d; /* Color secundario */
+    margin-bottom: 20px; /* Espacio con el contenido */
 }
 
 .Contact-info {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    background-color: #2ec4b6;
+    margin-left: 20px;
+    background-color: #2ec4b6; /* Color terciario */
     width: 400px;
     border-radius: 15%;
-    border:2px solid #011627;
+    border: 2px solid #1d3557; /* Color oscuro */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 .Contact-img img {
@@ -28,19 +39,34 @@
 }
 
 .Contact-Data h2 {
-    color: #011627;
+    color: #1d3557; /* Color oscuro */
+    margin: 0; /* Elimina márgenes innecesarios */
 }
 
 .Contact-Social {
-    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .Contact-Social a {
     margin-right: 10px;
-    color: #e71d36;
+    color: #e71d36; /* Color para enlaces */
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 .Contact-Social a:hover {
     color: #ff9f1c;
+    transition: color 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+/* Contraste */
+.high-contrast .Contact-container {
+    background-color: #1d3557; /* Color oscuro */
+    color: #f1faee; /* Fondo claro */
+}
+
+.high-contrast .Contact-info {
+    background-color: #457b9d; /* Color secundario */
 }

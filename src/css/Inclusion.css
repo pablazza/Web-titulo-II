@@ -1,0 +1,53 @@
+.Inclusion {
+    background-color: #f1faee;
+    color: #1d3557;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.Inclusion h1 {
+    font-size: 2.5em;
+    color: #457b9d;
+}
+
+.Inclusion p {
+    font-size: 1.1em;
+    color: #1d3557;
+    width: 900px;
+}
+
+.Inclusion ul {
+    width: 800px;
+}
+
+.Inclu-img {
+    float: right;
+    margin-left: 20px;
+    margin-top: -500px;
+    height: fit-content;
+}
+
+.Inclu-img img {
+    max-width: 500px;
+    height: auto;
+    border: 5px solid #a8dadc;
+    border-radius: 50%;
+}
+
+/* Contraste */
+.high-contrast .Inclusion {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+.high-contrast .Inclusion h1, 
+.high-contrast .Inclusion h2,
+.high-contrast .Inclusion h3 {
+    color: #a8dadc;
+}
+
+.high-contrast .Inclusion p {
+    color: #f1faee;
+}

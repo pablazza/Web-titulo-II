@@ -1,0 +1,67 @@
+.Operable {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #1d3557; /* Color oscuro */
+}
+
+/* Navegación por teclado */
+.keyboard-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.keyboard-nav li {
+    background-color: #a8dadc; /* Color terciario */
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.keyboard-nav li:focus {
+    outline: 3px solid #457b9d; /* Color secundario */
+    background-color: #f1faee; /* Fondo claro */
+}
+
+/* Botones accesibles */
+.control-button {
+    background-color: #e63946; /* Color principal */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-button:focus {
+    outline: 3px solid #FFD700;
+}
+
+.control-button:hover {
+    background-color: #218838;
+}
+
+/* Temporizador */
+strong {
+    color: #dc3545;
+}
+
+/* Contraste */
+.high-contrast .Operable {
+    background-color: #1d3557; /* Color oscuro */
+    color: #f1faee; /* Fondo claro */
+}
+
+.high-contrast .keyboard-nav li {
+    background-color: #457b9d; /* Color secundario */
+    color: #f1faee; /* Fondo claro */
+}
+
+.high-contrast .control-button {
+    background-color: #e63946; /* Color principal */
+}

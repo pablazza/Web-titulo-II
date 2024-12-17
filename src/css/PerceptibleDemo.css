@@ -1,0 +1,44 @@
+.Perceptible {
+    background-color: #fdfffc; /* Blanco */
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .Perceptible h2 {
+    color: #2ec4b6; /* Azul oscuro */
+  }
+  
+  .Perceptible p {
+    line-height: 1.5;
+    color: #2ec4b6; /* Turquesa */
+  }
+  
+  .Perceptible img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .Perceptible img:hover {
+    transform: scale(1.05);
+  }
+  
+  .alt-text {
+    margin-top: 0.5rem;
+    color: #011627; /* Azul oscuro */
+    font-weight: bold;
+  }
+
+  /* Contraste */
+  .high-contrast .Perceptible {
+    background-color: #1d3557; /* Color oscuro */
+    color: #f1faee; /* Fondo claro */
+}
+
+.high-contrast .Perceptible h2,
+.high-contrast .alt-text {
+    color: #a8dadc; /* Color terciario */
+}

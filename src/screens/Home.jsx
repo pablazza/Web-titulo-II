@@ -1,68 +1,72 @@
 // Importación de las bibliotecas y componentes que se utilizarán en la página de Inicio
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import 'font-awesome/css/font-awesome.min.css';
 import '../css/Home.css';
 
-// Importar imagénes
+// Importar imágenes
 import InclusionImg from '../assets/inclusion.jpg';
 import WcagImg from '../assets/wcag.webp';
 import SenadisImg from '../assets/senadis.png';
 
 // Código de la página de Inicio
 const Home = () => {
-    // Configuración del Carrusel
-    const sectionData = [
-        { title: '¿Qué es la Inclusión?', to:'/inclusion', image: InclusionImg },
-        { title: '¿Qué son las pautas de la WCAG?', to:'/wcag', image: WcagImg },
-        { title: '¿Qué es el SENADIS?', to:'/senadis', image: SenadisImg },
-    ];
-
-    const CustomPrevArrow = (props) => (
-        <div className='slick-prev' onClick={props.onClick}>
-            <i className="fa fa-chevron-left" aria-hidden="true"></i>
-        </div>
-    );
-
-    const CustomNextArrow = (props) => (
-        <div className='slick-next' onClick={props.onClick}>
-            <i className="fa fa-chevron-right" aria-hidden="true"></i>
-        </div>
-    );
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: <CustomPrevArrow />,
-        nextArrow: <CustomNextArrow />,
-
-    };
-
-    // Inicio
     return (
         <div className='Home'>
             <div className='Home-title'>
-                <h1 tabIndex="0" role="button">Bienvenido a la Guía de Sitios Inclusivos y Accesibles</h1>
+                <h1 tabIndex="0">Bienvenido a la Guía de Sitios Inclusivos y Accesibles</h1>
             </div>
-            <div className='carousel-container'>
-                <Slider {...settings}>
-                    {sectionData.map((section, index) => (
-                        <Link to={section.to} className="Home-section" key={index}>
-                            <div className="Home-image-container" tabIndex="0">
-                                <img src={section.image} alt={section.title} className='Home-image' />
-                                <div className='Home-info'>
-                                    <h2 tabIndex="0" role="button">{section.title}</h2>
-                                </div>
-                            </div>
+            <div className='Home-sections'>
+                {/* Sección de Inclusión */}
+                <div className="Home-section">
+                    <Link to="/inclusion" className="Home-link" aria-hidden="true" tabIndex="-1">
+                        <div className="Home-image-container">
+                            <img src={InclusionImg} alt="Inclusión" className='Home-image' tabIndex="0" />
+                        </div>
+                    </Link>
+                    <div className='Home-info'>
+                        <h2 tabIndex="0">¿Qué es la Inclusión?</h2>
+                        <p tabIndex="0">
+                            La inclusión busca eliminar barreras y garantizar que todas las personas, sin importar sus condiciones, participen plenamente en la sociedad.
+                        </p>
+                        <Link to="/inclusion" className="Home-link">
+                            Más información aquí
                         </Link>
-                    ))}
-                </Slider>
+                    </div>
+                </div>
+                {/* Sección de WCAG */}
+                <div className="Home-section">
+                    <Link to="/wcag" className="Home-link" aria-hidden="true" tabIndex="-1">
+                        <div className="Home-image-container">
+                            <img src={WcagImg} alt="Pautas de la WCAG" className='Home-image' tabIndex="0" />
+                        </div>
+                    </Link>
+                    <div className='Home-info'>
+                        <h2 tabIndex="0">¿Qué son las Pautas de la WCAG?</h2>
+                        <p tabIndex="0">
+                            Las pautas de la WCAG proporcionan estándares internacionales para hacer sitios web accesibles para todos, incluidas las personas con discapacidad.
+                        </p>
+                        <Link to="/wcag" className="Home-link">
+                            Más información aquí
+                        </Link>
+                    </div>
+                </div>
+                {/* Sección de SENADIS */}
+                <div className="Home-section">
+                    <Link to="/senadis" className="Home-link" aria-hidden="true" tabIndex="-1">
+                        <div className="Home-image-container">
+                            <img src={SenadisImg} alt="SENADIS" className='Home-image' tabIndex="0" />
+                        </div>
+                    </Link>
+                    <div className='Home-info'>
+                        <h2 tabIndex="0">¿Qué es el SENADIS?</h2>
+                        <p tabIndex="0">
+                            SENADIS es el Servicio Nacional de la Discapacidad, encargado de promover y garantizar los derechos de las personas con discapacidad en Chile.
+                        </p>
+                        <Link to="/senadis" className="Home-link">
+                            Más información aquí
+                        </Link>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -1,0 +1,60 @@
+.Comprensible {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #1d3557; /* Color oscuro */
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+input[aria-invalid="true"] {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.control-button {
+    background-color: #e63946; /* Color principal */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-button:hover {
+    background-color: #0056b3;
+}
+
+/* Contraste */
+.high-contrast .Comprensible {
+    background-color: #1d3557; /* Color oscuro */
+    color: #f1faee; /* Fondo claro */
+}
+
+.high-contrast .control-button {
+    background-color: #e63946; /* Color principal */
+}

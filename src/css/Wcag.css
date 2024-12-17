@@ -1,0 +1,57 @@
+.Wcag {
+  background-color: #f1faee; /* Fondo claro */
+  color: #1d3557; /* Color oscuro */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.Wcag h1 {
+  font-size: 2.5em;
+  color: #457b9d; /* Color secundario */
+}
+
+.Wcag h2 {
+  font-size: 2em;
+  color: #2ec4b6; /* Teal */
+}
+
+.Wcag p {
+  font-size: 1.1em;
+  color: #1d3557; /* Color oscuro */
+}
+
+.Wcag h3 {
+  color: #2ec4b6; /* Teal */
+}
+
+.Wcag-image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #a8dadc; /* Color terciario */
+  border-radius: 10%;
+}
+
+/* Contraste */
+.high-contrast .Wcag {
+  background-color: #1d3557; /* Color oscuro */
+  color: #f1faee; /* Fondo claro */
+}
+
+.high-contrast .Wcag h2,
+.high-contrast .Wcag h3 {
+  color: #a8dadc; /* Color terciario */
+}
+
+.high-contrast .Wcag p {
+  color: #f1faee; /* Fondo claro */
+}
+
+.high-contrast .Wcag-image-container img {
+  border: 5px solid #457b9d; /* Color secundario */
+}
+
+.high-contrast .Principios {
+  background-color: #1d3557;
+}

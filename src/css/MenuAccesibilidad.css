@@ -5,19 +5,27 @@
     border: 1px solid #ccc;
     padding: 15px;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menos sombra para hacerlo más suave */
     transition: all 0.3s ease;
-    width: 250px;
-    background-color: #f8f9fa; /* Fondo del menú */
-    color: #011627; /* Color del texto del menú */
+    min-width: 250px; /* Usar min-width para flexibilidad */
+    background-color: #f1faee; /* Fondo claro */
+    color: #1d3557; /* Color oscuro */
+}
+
+body {
+    cursor: url('../assets/cursor.svg') 16 16, auto;
+}
+
+button, a {
+    cursor: inherit;
 }
 
 .menu-toggle {
-    background-color: #007bff; /* Color del botón */
-    color: white;
+    background-color: #ccc; /* Color principal */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
     border: none;
     padding: 10px;
-    cursor: pointer;
 }
 
 .menu-items {
@@ -39,28 +47,42 @@
 }
 
 .menu-items button, .menu-items a {
-    background-color: #f8f9fa; /* Fondo de los botones */
-    border: 1px solid #007bff; /* Borde de los botones */
+    background-color: #f1faee; /* Fondo claro */
+    border: 2px solid #000000; /* Color principal */
     border-radius: 5px;
     padding: 10px;
     text-align: left;
-    cursor: pointer;
     width: 100%;
-    color: #007bff; /* Color del texto de los botones */
+    color: #000000; /* Color principal */
+    font-weight: bold;
+    cursor: inherit;
 }
 
 .menu-items a {
     text-decoration: none;
+    cursor: inherit;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.menu-items button:focus, .menu-items a:focus {
+    outline: 2px solid #e63946; /* Resaltar el botón cuando está enfocado */
+    outline-offset: 4px;
 }
 
 .high-contrast .menu-accesibilidad {
-    background-color: #007bff; /* Fondo del menú en alto contraste */
-    color: white; /* Color del texto en alto contraste */
+    background-color: #1d3557; /* Fondo oscuro */
+    color: #f1faee; /* Fondo claro */
 }
 
 .high-contrast .menu-items button,
 .high-contrast .menu-items a {
-    background-color: black; /* Fondo de los botones en alto contraste */
-    color: white; /* Color del texto de los botones en alto contraste */
-    border: 1px solid white; /* Borde de los botones en alto contraste */
+    background-color: #e63946; /* Color principal */
+    color: white;
+    cursor: inherit;
 }
